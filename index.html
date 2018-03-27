@@ -10,8 +10,34 @@
 
 <script>
  var words = ['javascript','style','animals','calculator'];
- var guessMixedCase = prompt('Enter A Guess');
- var guessPC = guessMixedCase.toLowerCase();
- alert(guessPC); 
+ var word = words[math.floor(math.random()*words.length);
+ //answer array setup                 
+ var answer = [];
+ for (var i = 0; i < word; i++;) {
+  answer[i] = '_';
+ }
+  
+ var rl = words.length;
+ //the game loop
+ while (rl > 0 {
+        // show the player their proggress
+        alert(answer.join(""));
+ 
+ //get a guess from the player
+ var guessMixedCase = prompt('Guess a letter, or click Cancel to stop playing');
+var guessPC = guessMixedCase.toLowerCase();
+ if (guessPC === null) {
+  break;
+ }else if (guessPC.length !== 1) {
+  alert('please enter a 1 letter answer')
+ }else {
+  //update the game state with the guess
+  for (var j = 0; j < word.length; j++;) {
+   if word[j] === guessPC) {
+    answer[j] = guessPC;
+    rl--;
+   }
+  }
+ }
   
 </script>
